@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: My projects
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+
 horizontal: false
 ---
 
@@ -16,7 +16,9 @@ horizontal: false
   {%- for category in page.display_categories %}
   <h2 class="category">{{ category }}</h2>
   {%- assign categorized_projects = site.projects | where: "category", category -%}
-  {%- assign sorted_projects = categorized_projects | sort: "importance" %}
+  {%- assign projects_with_importance = categorized_projects | where_exp: "item", "item.importance != nil" %}
+
+  {%- assign sorted_projects = projects_with_importance | sort: "importance" %}
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}
   <div class="container">
@@ -27,6 +29,15 @@ horizontal: false
     </div>
   </div>
   {%- else -%}
+  {%- if sorted_projects and sorted_projects.size > 0 -%}
+  <!-- Iterate and display projects -->
+    {%- for project in sorted_projects -%}
+      {% include projects.html %}
+    {%- endfor -%}
+  {%- else -%}
+    <p>No projects found.</p>
+  {%- endif -%}
+
   <div class="grid">
     {%- for project in sorted_projects -%}
       {% include projects.html %}
@@ -37,7 +48,8 @@ horizontal: false
 
 {%- else -%}
 <!-- Display projects without categories -->
-  {%- assign sorted_projects = site.projects | sort: "importance" -%}
+  {%- assign projects_with_importance = site.projects | where_exp: "project", "project.importance != nil" %}
+  {%- assign sorted_projects = projects_with_importance | sort: "importance" -%}
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}
   <div class="container">
