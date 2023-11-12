@@ -1,32 +1,43 @@
-<!-- ---
+---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: ":tada: Celebrating Hacktoberfest 2023 Achievements! :rocket::seedling:"
+date: 2023-10-17
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+:partying_face: **Exciting News!** :rocket:
 
-***
+I'm thrilled to share that not one, but two of my pull requests were successfully merged during Hacktoberfest 2023! :tada: As a token of appreciation, I've proudly earned the exclusive Level 2 Hacktoberfest badge! :medal:
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+### Pull Request 1: ZenML CLI Typo Fix
+During the Hacktoberfest event, I fixed a common CLI command typo in ZenML. My contribution involved changing "zenml pipelines list" to "zenml pipeline list." Every small change counts in our journey of giving back to the tech community! :muscle:
 
-#### Hipster list
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+[Check out the contribution on GitHub](https://lnkd.in/gwNP76Cr)
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+A huge shoutout to the Hacktoberfest team for the Level 1 badge that motivated me to aim higher! :fire: #OpenSource #Hacktoberfest #LevelUp #GitHub #Contributor #Programming #Coding #TechCommunity #ZenML
 
-***
+:deciduous_tree: **Pull Request 2: Tree Planting Reward**
+But wait, there's more! :deciduous_tree: As a delightful reward for my open-source contributions, I received a tree planted in my name through Tree-Nation. This Markhamia lutea now stands tall in the Usambara Biodiversity Conservation project in Tanzania! :earth_africa::herb:
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
+[Discover my tree and the message left by Hacktoberfest](https://lnkd.in/gjsfis7r)
 
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
+#TreePlanting #ClimateAction #TreeNation #BiodiversityConservation #GreenPlanet #Sustainability :earth_americas::green_heart::seedling:
 
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual. -->
+---
+
+:partying_face: **Exciting News: Level 2 Badge Unlocked in Hacktoberfest 2023!** :rocket::tada:
+
+I'm thrilled to announce that my recent pull request in the Evidently AI repository has earned me the prestigious Level 2 Hacktoberfest badge! :trophy:
+
+### Pull Request: Evidently AI Repository Enhancement
+In my contribution, I made a subtle yet impactful change by updating the display name for DatasetCorrelationsMetric() to "Dataset Correlations" in the title. This small improvement enhances clarity and consistency in the project. :briefcase::wrench:
+
+[Check out the pull request on GitHub](https://lnkd.in/g6vZTtTz)
+
+A heartfelt thank you to Emeli Dral for merging my contribution! Your recognition means the world to me. :clap::pray: #Hacktoberfest2023 #OpenSource #GitHub #Collaboration #Community #EvidentlyAI #DataScience #MachineLearning #MLOps #MLObservability #Monitoring‍
+
+:moneybag: **Milestone Moment:** :tada:
+This achievement is even more special as it marks my continued journey in the open-source community. Keep exploring, keep learning! :rocket:
+
+[View my Hacktoberfest Level 2 Badge](https://www.holopin.io/hacktoberfest2023/userbadge/clo6l68rc07720fl3jxahnfkf)
