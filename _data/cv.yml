@@ -15,13 +15,13 @@
       institution: Sri Eshwar College Of Engineering, Coimbatore (India)
       year: 2022 - 2026
       description:
-        - CGPA = 8.28/10 (till 2nd Semester)
+        - CGPA: 8.28/10 (till 2nd Semester)
     
 - title: Projects
   type: time_table
   contents:
     - title: Flight Delay Prediction and Live Monitoring
-      year: Completed
+      year: Ongoing
       description:
         - Developed a streamlit web application to predict Flight delays, for airline operations.
         - Implemented MVC architecture in the Streamlit web app code.
@@ -31,7 +31,7 @@
         - Integrated Evidently for live Data and Model performance reports.
         - Deployed the live web application in Streamlit Sharing.
     - title: Employee Attrition Rate Prediction- MLOps Project
-      year: Completed
+      year: Ongoing
       description:
         - Developed a streamlit web application to predict the attrition rate of employees.
         - Used Logistic Regression model to train the data.
@@ -42,7 +42,7 @@
 - title: Certifications
   type: time_table
   contents:
-    - year: October, 2023
+    - year: Ongoing
       items: 
         - Certificate of Appreciation for “Analyse Growth and Present Insights to the Telangana Government” Resume Project Challenge.
     
@@ -101,16 +101,5 @@
 - title: My Blogs
   type: list
   contents:
-    - title: Blog Title 1
-      description: Description of the first blog.
-      link: https://example.com/blog1
-      link_text: Read More
-
-    - title: Blog Title 2
-      description: Description of the second blog.
-      link: https://example.com/blog2
-      link_text: Read More
-
-
-
-
+    - Simplifying MLOps- A Complete Guide On ZenML For Beginners [View](https://www.analyticsvidhya.com/blog/2023/10/zenml-for-beginners-simplifying-mlops/)
+    - Employee Attrition Rate Prediction Using ZenML and Streamlit [View](https://www.analyticsvidhya.com/blog/2023/09/mlops-employee-attrition-rate-prediction-using-zenml-and-streamlit/)

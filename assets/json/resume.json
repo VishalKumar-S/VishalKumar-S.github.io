@@ -44,19 +44,19 @@
   "certifications": [
     {
       "title": "Certificate of Appreciation for “Analyse Growth and Present Insights to the Telangana Government” Resume Project Challenge.",
-      "url": "https://codebasics.io/certificate/CB-CH-1-10-41936"
+      "date": "https://codebasics.io/certificate/CB-CH-1-10-41936"
     }
   ],
   "skills": [{
     "Languages":"C | Java | Python",
-    "Web Technologies" : " HTML | CSS - Basic",
-    "Core Concepts" : "DSA, OOPS",
-    "Experiment tracking tools" : "mlflow",
-    "Data Validator tools" :"Evidently",
-    "Artifact store" : "S3 bucket, Azure blob storage",
-    "Orchestrator" : "ZenML, GitHub Actions",
-    "Cloud" : "AWS, Azure",
-    "Data Science Libraries" : "NumPy, Pandas, Scikit-learn, SciPy, Matplotlib, Seaborn"
+    // "Web Technologies - HTML | CSS - Basic",
+    // "Core Concepts - DSA, OOPs",
+    // "Experiment tracking tools - mlflow",
+    // "Data Validator tools - Evidently",
+    // "Artifact store - S3 bucket, Azure blob storage",
+    // "Orchestrator - ZenML, GitHub Actions",
+    // "Cloud - AWS, Azure",
+    // "Data Science Libraries - NumPy, Pandas, Scikit-learn, SciPy, Matplotlib, Seaborn"
 }],
   "achievements": [
     "Successfully merged 2 PRs in Hacktoberfest 2023, receiving exclusive digital badges and a tree plantation as a reward.",
