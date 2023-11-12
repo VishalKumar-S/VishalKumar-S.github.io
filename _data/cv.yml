@@ -15,13 +15,13 @@
       institution: Sri Eshwar College Of Engineering, Coimbatore (India)
       year: 2022 - 2026
       description:
-        - CGPA: 8.28/10 (till 2nd Semester)
+        - CGPA- 8.28/10 (till 2nd Semester)
     
 - title: Projects
   type: time_table
   contents:
     - title: Flight Delay Prediction and Live Monitoring
-      year: Ongoing
+      year: Completed
       description:
         - Developed a streamlit web application to predict Flight delays, for airline operations.
         - Implemented MVC architecture in the Streamlit web app code.
@@ -31,7 +31,7 @@
         - Integrated Evidently for live Data and Model performance reports.
         - Deployed the live web application in Streamlit Sharing.
     - title: Employee Attrition Rate Prediction- MLOps Project
-      year: Ongoing
+      year: Completed
       description:
         - Developed a streamlit web application to predict the attrition rate of employees.
         - Used Logistic Regression model to train the data.
@@ -42,7 +42,7 @@
 - title: Certifications
   type: time_table
   contents:
-    - year: Ongoing
+    - year: Oct, 2023
       items: 
         - Certificate of Appreciation for “Analyse Growth and Present Insights to the Telangana Government” Resume Project Challenge.
     

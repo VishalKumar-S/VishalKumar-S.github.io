@@ -104,7 +104,8 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Welcome to my portfolio! Whether you're exploring potential collaborations, job opportunities, or just sharing common interests, I'm delighted to connect. Feel free to reach out through any of the listed platforms. Let's engage in discussions about data science, machine learning, and technology. I'm excited about the possibility of working together or sharing insights in the world of data!
+
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
