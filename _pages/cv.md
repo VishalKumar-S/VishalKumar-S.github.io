@@ -4,9 +4,5 @@ permalink: /cv/
 title: Curriculum Vitae
 nav: true
 nav_order: 4
-#cv_pdf: example_pdf.pdf
-description: 
-cv_google_docs_link: "https://docs.google.com/document/d/1W66t5hz-3mWiXMmcRHpP9p09L94Og_31dUBiJGcnXlQ/edit?usp=sharing"
-toc:
-  sidebar: left
+redirect: "https://docs.google.com/document/d/138s2R_szhwW3D_BfXgrhrLZIngc6WJ8P/edit?usp=sharing&ouid=113610081596049927817&rtpof=true&sd=true"
 ---
