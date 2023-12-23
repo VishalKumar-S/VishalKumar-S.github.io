@@ -1,0 +1,105 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Vishal Kumar. S
+    - name: Date of Birth
+      value: 28th February 2004
+    - name: Languages
+      value: English, Tamil
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Bachelor's in Artificial Intelligence and Data Science (B. Tech.)
+      institution: Sri Eshwar College Of Engineering, Coimbatore (India)
+      year: 2022 - 2026
+      description:
+        - CGPA- 8.28/10 (till 2nd Semester)
+    
+- title: Projects
+  type: time_table
+  contents:
+    - title: Flight Delay Prediction and Live Monitoring
+      year: Completed
+      description:
+        - Developed a streamlit web application to predict Flight delays, for airline operations.
+        - Implemented MVC architecture in the Streamlit web app code.
+        - Utilized Azure to fetch the raw dataset.
+        - Trained the data with an XGboost Regressor model, after evaluating various regression models.
+        - Containerized the application using Docker.
+        - Integrated Evidently for live Data and Model performance reports.
+        - Deployed the live web application in Streamlit Sharing.
+    - title: Employee Attrition Rate Prediction- MLOps Project
+      year: Completed
+      description:
+        - Developed a streamlit web application to predict the attrition rate of employees.
+        - Used Logistic Regression model to train the data.
+        - Implemented ZenML, a MLOps orchestration tool, for creating ML pipelines, and to integrate with other MLOps tools.
+        - Integrated mlflow, an experiment-tracking tool, with ZenML, to track our pipelines.
+        - Implemented CI/CD to continuous data integration and deployed the best-performing model.
+    
+- title: Certifications
+  type: time_table
+  contents:
+    - year: Oct, 2023
+      items: 
+        - Certificate of Appreciation for “Analyse Growth and Present Insights to the Telangana Government” Resume Project Challenge.
+    
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - C
+        - Java
+        - Python
+    - title: Web Technologies
+      items:
+        - HTML
+        - CSS- Basic
+    - title: Core Concepts
+      items:
+        - DSA
+        - OOPs
+    - title: Experiment tracking tools
+      items:
+        - mlflow
+    - title: Data Validator tools
+      items:
+        - Evidently
+    - title: Artifact store
+      items:
+        - S3 bucket
+        - Azure blob storage
+    - title: Orchestrator
+      items:
+        - ZenML
+        - GitHub Actions
+    - title: Cloud
+      items:
+        - AWS
+        - Azure
+    - title: Data Science Libraries
+      items:
+        - NumPy
+        - Pandas
+        - Scikit-learn
+        - SciPy
+        - Matplotlib
+        - Seaborn
+    
+- title: Achievements
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - Successfully merged 2 PRs in Hacktoberfest 2023, receiving exclusive digital badges and a tree plantation as a reward.
+        - Won the third prize with the reward of Rs.9,500 for my Blog, “Employee Attrition Rate Prediction using ZenML and Streamlit,” in the Best Guides Category in Blogathon 36 on Analytics Vidhya.
+        - Published 2 blogs related to MLOps on Analytics Vidhya.
+
+- title: My Blogs
+  type: list
+  contents:
+    - Simplifying MLOps- A Complete Guide On ZenML For Beginners [View](https://www.analyticsvidhya.com/blog/2023/10/zenml-for-beginners-simplifying-mlops/)
+    - Employee Attrition Rate Prediction Using ZenML and Streamlit [View](https://www.analyticsvidhya.com/blog/2023/09/mlops-employee-attrition-rate-prediction-using-zenml-and-streamlit/)

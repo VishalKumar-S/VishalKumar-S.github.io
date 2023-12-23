@@ -1,0 +1,16 @@
+/* Your existing CSS */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .grid-item {
+    width: calc(33.33% - 10px); /* Adjust width to fit three items per row */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+    /* Other styles for individual project boxes */
+    /* For instance: */
+    /* border: 1px solid #ccc; */
+    /* padding: 20px; */
+  }
+  

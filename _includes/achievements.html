@@ -1,0 +1,38 @@
+<!-- _includes/achievements.html -->
+<div class="grid-sizer" style="display: flex; flex-wrap: wrap; justify-content: space-between;"> <!-- Use a flexbox layout -->
+    <div class="grid-item" style="width: 45%; margin-bottom: 20px; font-family: Arial, sans-serif;"> <!-- Adjust the width as per your requirement -->
+      {% if achievement.redirect -%}
+      <a href="{{ achievement.redirect }}">
+        {%- else -%}
+        <a href="{{ achievement.url | relative_url }}">
+          {%- endif %}
+          <div class="card hoverable" style="transition: transform .2s; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            {%- if achievement.image %}
+            {%- include figure.html
+              path=achievement.image
+              alt="achievement thumbnail" -%}
+            {%- endif %}
+            <div class="card-body">
+              <h2 class="card-title" style="font-weight: bold;">{{ achievement.title }}</h2>
+              <p class="card-text">{{ achievement.description }}</p>
+              <p class="card-date">{{ achievement.date | date: "%B %d, %Y" }}</p> <!-- Display the date -->
+              <div class="row ml-1 mr-1 p-0">
+                {%- if achievement.github -%}
+                <div class="github-icon">
+                  <div class="icon" data-toggle="tooltip" title="Code Repository">
+                    <a href="{{ achievement.github }}"><i class="fab fa-github gh-icon"></i></a>
+                  </div>
+                  {%- if achievement.github_stars -%}
+                  <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+                    <i class="fas fa-star"></i>
+                    <span id="{{ achievement.github_stars }}-stars"></span>
+                  </span>
+                  {%- endif %}
+                </div>
+                {%- endif %}
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+</div>
