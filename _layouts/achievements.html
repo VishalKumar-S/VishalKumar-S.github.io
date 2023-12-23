@@ -1,0 +1,73 @@
+---
+layout: default
+title: Achievements
+---
+
+<style>
+  /* Styles for Achievements */
+  .achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .achievement-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
+  .achievement-item {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .achievement-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .achievement-details {
+    padding: 15px;
+  }
+
+  .achievement-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .achievement-date {
+    font-style: italic;
+    color: #888;
+  }
+</style>
+
+<div class="achievements">
+  <h1>Achievements</h1>
+  <div class="achievement-list">
+    {% assign sorted_achievements = site.achievements | sort: 'date' | reverse %}
+    {% for post in sorted_achievements %}
+      <div class="achievement-item">
+        <a href="{{ post.url }}">
+          <img src="{{ post.image }}" alt="{{ post.title }}" class="achievement-image">
+          <div class="achievement-details">
+            <h2 class="achievement-title">{{ post.title }}</h2>
+            <p class="achievement-date">{{ post.date | date: "%B %d, %Y" }}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

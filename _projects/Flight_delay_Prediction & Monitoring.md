@@ -6,4 +6,5 @@ img: /assets/img/flight_delay.jpg
 importance: 2
 category: work
 redirect: https://github.com/VishalKumar-S/Flight-Delay-Prediction-and-live-Monitoring-with-Azure-Evidently-and-Streamlit-with-MVC-Architecture
+
 ---

@@ -2,46 +2,55 @@
 layout: page
 ---
 
-<!-- about.html -->
+<!-- profiles.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
       <div class="post">
 
         <article>
           {% if page.profiles -%}
-          {% for profile in page.profiles %}
-          <hr>
-          <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if profile.image %}
-              {%- assign profile_image_path = profile.image | prepend: 'assets/img/' -%}
+            {% for profile in page.profiles %}
+              <hr>
+              <div class="row">
+                <div class="col-md-6 {% if profile.align == 'right' %}offset-md-6 text-md-right{% endif %}">
+                  {%- if profile.image %}
+                    {%- assign profile_image_path = profile.image | prepend: 'assets/img/' -%}
 
-              {% if profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
+                    {% if profile.image_circular %}
+                      {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+                    {% else %}
+                      {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                    {% endif %}
 
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=profile.image -%}
-            {% endif -%}
-            {%- if profile.more_info %}
-            <div class="more-info">
-              {{ profile.more_info }}
-            </div>
-            {%- endif %}
-          </div>
+                    {% include figure.html
+                    path=profile_image_path
+                    class=profile_image_class
+                    alt=profile.image -%}
+                  {% endif -%}
+                  {%- if profile.more_info %}
+                    <div class="more-info">
+                      {{ profile.more_info }}
+                    </div>
+                  {%- endif %}
+                </div>
 
-          <div class="clearfix">
-            {% if profile.content -%}
-            {% capture profile_content %}{%- include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-            {%- else -%}
-            {{ content }}
-            {%- endif %}
-          </div>
-
-          {% endfor %}
+                <div class="col-md-6 {% if profile.align == 'left' %}offset-md-6{% endif %}">
+                  <div class="clearfix">
+                    {% if profile.content -%}
+                      {% capture profile_content %}{%- include_relative {{ profile.content }} %}{% endcapture %}
+                      {{ profile_content | markdownify }}
+                    {%- else -%}
+                      {{ content }}
+                    {%- endif %}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
           {%- endif %}
         </article>
 
+      </div>
+    </div>
+  </div>
 </div>
