@@ -8,7 +8,11 @@ layout: default
           <h1 class="post-title">
             {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+          <div class="contact-info">
+            <p><strong>Email:</strong> {{ page.email }}</p>
+            <p><strong>Phone:</strong> {{ page.phone }}</p>
+            <p><strong>Location:</strong> {{ page.location }}</p>
+          </div>
         </header>
 
         <article>
@@ -41,18 +45,7 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/achievements/' | relative_url }}" style="color: inherit;">latest achievements</a></h2>
-            {%- include achievements.html limit=true %}
-          {%- endif %}
-          
 
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
 
           <!-- Selected papers
           {% if page.selected_papers -%}

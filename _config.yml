@@ -104,7 +104,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  Welcome to my portfolio! Whether you're exploring potential collaborations, job opportunities, or just sharing common interests, I'm delighted to connect. Feel free to reach out through any of the listed platforms. Let's engage in discussions about data science, machine learning, and technology. I'm excited about the possibility of working together or sharing insights in the world of data!
+  Feel free to connect through the listed platforms to discuss data science, machine learning, or potential collaborations. I'm excited to engage with you!
 
 
 # -----------------------------------------------------------------------------
@@ -122,10 +122,6 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 
-blog_name: My Blogs # blog_name will be displayed in your blog page
-blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: My Published Blogs
-permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
@@ -166,14 +162,19 @@ disqus_shortname: al-folio # put your disqus shortname
 
 # Collections
 collections:
-  latest achievements:
-    defaults:
-      layout: post
-    output: true
-    permalink: /achievements/:path/
+  # latest achievements:
+  #   defaults:
+  #     layout: post
+  #   output: true
+  #   permalink: /achievements/:path/
   projects:
     output: true
     permalink: /projects/:path/
+  achievements:
+    output: true
+  experiences:
+    output: true
+    permalink: /experiences/:path/
 
   
 

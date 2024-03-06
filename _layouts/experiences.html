@@ -1,0 +1,140 @@
+---
+layout: default
+title: Experiences
+---
+
+<style>
+ /* Styles for Experiences */
+ .experiences {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px 20px;
+ }
+
+ .timeline {
+   position: relative;
+   max-width: 800px;
+   width: 100%;
+ }
+
+ .timeline::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   height: 100%;
+   width: 4px;
+   background-color: #ddd;
+   transform: translateX(-50%);
+ }
+
+ .experience-item {
+   position: relative;
+   width: 45%;
+   padding: 20px;
+   background-color: #f9f9f9;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   text-align: left; /* Content is aligned to the left for all boxes */
+ }
+
+ .experience-item:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ .experience-item:nth-child(even) {
+   margin-left: auto;
+ }
+
+ .experience-item::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 20px;
+   height: 20px;
+   background-color: #fff;
+   border: 4px solid #ddd;
+   border-radius: 50%;
+   z-index: 1;
+ }
+
+ .experience-item:nth-child(odd)::before {
+   right: -40px;
+ }
+
+ .experience-item:nth-child(even)::before {
+   left: -40px;
+ }
+
+ .experience-title {
+   margin-bottom: 10px;
+   font-size: 20px;
+   font-weight: bold;
+ }
+
+ .experience-company {
+   font-size: 16px;
+   font-weight: bold;
+   margin-bottom: 5px;
+ }
+
+ .experience-dates {
+   font-style: italic;
+   color: #888;
+   margin-bottom: 10px;
+ }
+
+ .experience-description {
+   margin-bottom: 10px;
+ }
+
+ .experience-highlights {
+   margin-top: 10px;
+ }
+
+ .experience-highlights li {
+   margin-bottom: 5px;
+ }
+
+ @media (max-width: 767px) {
+   .experience-item {
+     width: 100%;
+   }
+
+   .experience-item:nth-child(odd)::before,
+   .experience-item:nth-child(even)::before {
+     left: 0;
+     transform: translateX(-50%);
+   }
+ }
+</style>
+
+<div class="experiences">
+ <h1>Experiences</h1>
+ <div class="timeline">
+   {% assign sorted_experiences = site.experiences | sort: 'start_date' | reverse %}
+   {% if sorted_experiences.size > 0 %}
+     {% for experience in sorted_experiences %}
+       <div class="experience-item">
+         <h2 class="experience-title">{{ experience.title }}</h2>
+         <p class="experience-company">{{ experience.company }}{% if experience.location %} - {{ experience.location }}{% endif %}</p>
+         <p class="experience-dates">{{ experience.start_date }} - {{ experience.end_date | default: "Present" }}</p>
+         <p class="experience-description">{{ experience.description }}</p>
+         {% if experience.highlights %}
+           <ul class="experience-highlights">
+             {% for highlight in experience.highlights %}
+               <li>{{ highlight }}</li>
+             {% endfor %}
+           </ul>
+         {% endif %}
+       </div>
+     {% endfor %}
+   {% else %}
+     <p>No experiences found.</p>
+   {% endif %}
+ </div>
+</div>

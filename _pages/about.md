@@ -2,7 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: Coimbatore, India <br> +91 6383358799
+
+email: vishalkumars.work@gmail.com
+phone: +91 6383358799
+location: Coimbatore, India
+
+
 profile:
   align: right
   image: prof_pic.jpg
@@ -19,4 +24,4 @@ social:
     url: https://www.linkedin.com/in/vishal-kumar-s-095491247/
 ---
 
-Hi, I'm Vishal - a passionate Data Science and Machine Learning Enthusiast currently pursuing a B.Tech in Artificial Intelligence and Data Science. I'm on a quest to transform data into actionable insights. With a knack for problem-solving and a dedication to innovation, I specialize in harnessing data-driven solutions to unlock the full potential of businesses. Join me on this exciting data-driven journey!
+Hi, I'm Vishal - An accomplished data science professional skilled in transforming complex data into strategic business impact. Recognized for authoring insightful technical blogs and developing efficient MLOps solutions. Committed to delivering innovative, production-ready systems through collaboration and continuous learning. Seeking opportunities to contribute expertise to impactful projects.
