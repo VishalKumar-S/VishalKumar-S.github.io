@@ -4,8 +4,8 @@ title: About
 permalink: /
 
 email: vishalkumars.work@gmail.com
-phone: +91 6383358799
-location: Coimbatore, India
+
+
 
 
 profile:
