@@ -3,6 +3,7 @@ layout: post
 title: ":tada: Celebrating Hacktoberfest 2023 Achievements! :rocket::seedling:"
 date: 2023-10-17
 image: /assets/img/hacktoberfest-badge.PNG
+redirect_url: https://www.linkedin.com/posts/vishal-kumar-s-095491247_i-got-the-hacktoberfest-2023-level-2-badge-activity-7123205528175960064-0J60?utm_source=share&utm_medium=member_desktop
 inline: false
 related_posts: false
 ---

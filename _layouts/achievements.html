@@ -60,7 +60,7 @@ title: Achievements
     {% assign sorted_achievements = site.achievements | sort: 'date' | reverse %}
     {% for post in sorted_achievements %}
       <div class="achievement-item">
-        <a href="{{ post.url }}">
+        <a href="{{ post.redirect_url | default: post.url }}">
           <img src="{{ post.image }}" alt="{{ post.title }}" class="achievement-image">
           <div class="achievement-details">
             <h2 class="achievement-title">{{ post.title }}</h2>
