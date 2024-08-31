@@ -8,6 +8,8 @@ description: Create insightful articles on MLOps, machine learning best practice
 highlights:
   - Authored 4 high-quality articles on MLOps, generating over 645 views and demonstrating expertise in model deployment, monitoring, and ML workflows.
   - Developed comprehensive guides leveraging MLOps tools like ZenML, mlflow and Evidently to showcase ML lifecycle management.
+  - Recognized as a top performer for educational impact, bridging theory and practice across machine learning lifecycle stages
+
 ---
 
 
